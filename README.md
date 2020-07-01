@@ -13,11 +13,28 @@ and paste it within App.js
 clientId= 'id'
 clientSecret= 'secret'
 ```
-2. Start the server
+2. Install dependencies
+
+```
+npm install
+```
+
+3. Add your Amadeus credentials to the app.js file in this section:
+
+```js
+var amadeus = new Amadeus({
+  clientId: '',
+  clientSecret: ''
+});
+```
+
+4. Start the server
 
 ```
 node app.js
 ```
+
+5. Access over http://localhost:3000/
 
 # Built Using
 * Express.JS
